@@ -1,48 +1,174 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YahezKieL</title>
-<style>
-*{box-sizing:border-box}
-body{
-    margin:0;
-    min-height:100vh;
-    font-family:Arial,sans-serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YahezKieL</title></title>
 
-    background-image:url("baground.jpg");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    color:white;
-    display:flex;
-    justify-content:center;
-}
-.avatar{width:92px;height:92px;border-radius:50%;margin:auto;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fff,#8e9bb5);color:#080a10;font-size:30px;font-weight:800;box-shadow:0 8px 35px #0008}
-h1{margin:18px 0 6px;font-size:27px;letter-spacing:.5px}.handle{color:#aeb6c8;margin-bottom:28px}
-.bio{
-    font-size:15px;color:#d6d9e2; margin:0 0 30px;.links{display:grid;gap:14px}
-}
-a{display:block;padding:17px 20px;border-radius:15px;background:#ffffff0d;border:1px solid #ffffff1c;color:#fff;text-decoration:none;font-weight:700;backdrop-filter:blur(10px);transition:.2s}
-a:hover{transform:translateY(-2px);background:#ffffff18}.small{font-weight:500;color:#c4cad7;font-size:13px}
-footer{margin-top:32px;color:#737b8c;font-size:12px}
-</style>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background: #fff;
+      color: #171717;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+      margin: auto;
+      padding: 90px 32px 50px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 58px;
+    }
+
+    .profile img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 25px;
+    }
+
+    .profile h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .profile p {
+      font-size: 18px;
+      color: #777;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .link-card {
+      width: 100%;
+      min-height: 108px;
+      display: flex;
+      align-items: center;
+      padding: 18px 26px;
+      text-decoration: none;
+      color: #171717;
+      border: 1px solid #eadcdf;
+      border-radius: 25px;
+      transition: .2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fde8ed;
+      border-radius: 13px;
+      color: #b51f52;
+      font-size: 22px;
+      margin-right: 20px;
+    }
+
+    .link-card span {
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .arrow {
+      margin-left: auto;
+      color: #666;
+      font-size: 17px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 135px;
+      color: #666;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 70px 32px 40px;
+      }
+
+      .profile img {
+        width: 125px;
+        height: 125px;
+      }
+
+      .profile h1 {
+        font-size: 27px;
+      }
+
+      .link-card {
+        min-height: 108px;
+        padding: 18px 25px;
+      }
+
+      .link-card span {
+        font-size: 16px;
+      }
+
+      footer {
+        margin-top: 120px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<main class="container">
-<img class="avatar" src="profil.jpg" alt="YahezKieL">
-<h1>YahezKieL</h1>
-<div class="handle">@YahezKieL</div>
-<p class="bio">Pasaa acuuu.</p>
-<div class="links">
-<a href="https://instagram.com/" target="_blank">Instagram</a>
-<a href="https://www.tiktok.com/@kapassaaaaaaa?_r=1&_t=ZS-99FnJuMomDU" target="_blank">TikTok</a>
-<a href="https://portal.tmgm-tmc.com/register?node=MzQ3NDA3&language=id" target="_blank">Broker TMGM</a>
-<a href="#" class="small">Link lainnya</a>
-</div>
-<footer>© 2026 YahezKieL</footer>
-</main>
+  <main class="container">
+
+    <section class="profile">
+      <!-- Ganti URL gambar di bawah dengan foto profil kamu -->
+      <img src="profil.jpg">
+
+      <h1>YahezKieL</h1>
+      <p>@yahezkiel</p>
+    </section>
+
+    <section class="links">
+
+      <a href="https://www.tiktok.com/@kapassaaaaaaa?_r=1&_t=ZS-99FnJuMomDU" target="_blank">TikTok</a>  
+      </a>
+
+      <a href="https://instagram.com/" target="_blank">Instagram</a>  
+      </a>
+
+      <a href="https://portal.tmgm-tmc.com/register?node=MzQ3NDA3&language=id" target="_blank">Broker TMGM</a>
+      </a>
+
+    </section>
+
+    <footer>
+      YahezKieL
+    </footer>
+
+  </main>
 </body>
 </html>

@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YahezKieL</title></title>
+
+  <title>YahezKieL</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -19,106 +24,190 @@
 
     body {
       font-family: "Inter", Arial, sans-serif;
-      background: #fff;
-      color: #171717;
+      min-height: 100vh;
+      color: white;
+
+      /* BACKGROUND */
+      background:
+        radial-gradient(circle at 50% 0%,
+          #26304a 0%,
+          #111522 35%,
+          #050609 75%,
+          #000000 100%);
+
+      background-attachment: fixed;
     }
 
+    /* CONTAINER */
     .container {
       width: 100%;
-      max-width: 680px;
+      max-width: 600px;
       margin: auto;
-      padding: 90px 32px 50px;
+      padding: 65px 25px 45px;
     }
 
+    /* PROFILE */
     .profile {
       text-align: center;
-      margin-bottom: 58px;
+      margin-bottom: 45px;
     }
 
     .profile img {
-      width: 130px;
-      height: 130px;
+      width: 125px;
+      height: 125px;
+
       object-fit: cover;
       border-radius: 50%;
+
       display: block;
-      margin: 0 auto 25px;
+      margin: 0 auto 22px;
+
+      border: 3px solid rgba(255,255,255,0.15);
+
+      box-shadow:
+        0 0 0 8px rgba(255,255,255,0.03),
+        0 10px 35px rgba(0,0,0,0.5);
     }
 
     .profile h1 {
       font-size: 28px;
       font-weight: 700;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
+      letter-spacing: -0.5px;
     }
 
     .profile p {
-      font-size: 18px;
-      color: #777;
+      font-size: 16px;
+      color: #999;
     }
 
+    /* LINK AREA */
     .links {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 16px;
     }
 
+    /* KOTAK LINK */
     .link-card {
       width: 100%;
-      min-height: 108px;
+      min-height: 76px;
+
       display: flex;
       align-items: center;
-      padding: 18px 26px;
+
+      padding: 12px 18px;
+
       text-decoration: none;
-      color: #171717;
-      border: 1px solid #eadcdf;
-      border-radius: 25px;
-      transition: .2s ease;
+      color: white;
+
+      background: rgba(255,255,255,0.055);
+
+      border: 1px solid rgba(255,255,255,0.12);
+
+      border-radius: 18px;
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.25);
+
+      transition: all 0.25s ease;
     }
 
+    /* HOVER */
     .link-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+      transform: translateY(-3px);
+
+      background: rgba(255,255,255,0.09);
+
+      border-color: rgba(255,255,255,0.22);
+
+      box-shadow:
+        0 12px 30px rgba(0,0,0,0.4);
     }
 
+    /* ICON */
     .icon {
-      width: 58px;
-      height: 58px;
+      width: 50px;
+      height: 50px;
+
       flex-shrink: 0;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #fde8ed;
-      border-radius: 13px;
-      color: #b51f52;
-      font-size: 22px;
-      margin-right: 20px;
+
+      background: rgba(255,255,255,0.09);
+
+      border-radius: 14px;
+
+      font-size: 21px;
+
+      margin-right: 17px;
     }
 
+    /* WARNA ICON */
+    .tiktok {
+      color: #ffffff;
+    }
+
+    .instagram {
+      color: #ff7ab8;
+    }
+
+    .broker {
+      color: #8fa9ff;
+    }
+
+    /* TEXT */
     .link-card span {
-      font-size: 17px;
-      font-weight: 500;
+      font-size: 16px;
+      font-weight: 600;
     }
 
+    /* ARROW */
     .arrow {
       margin-left: auto;
-      color: #666;
-      font-size: 17px;
+
+      color: #777;
+
+      font-size: 15px;
+
+      transition: 0.2s;
     }
 
+    .link-card:hover .arrow {
+      color: white;
+      transform: translateX(3px);
+    }
+
+    /* FOOTER */
     footer {
       text-align: center;
-      margin-top: 135px;
-      color: #666;
-      font-size: 16px;
+
+      margin-top: 90px;
+
+      color: #555;
+
+      font-size: 14px;
     }
 
+    /* MOBILE */
     @media (max-width: 600px) {
+
       .container {
-        padding: 70px 32px 40px;
+        padding: 60px 24px 35px;
+      }
+
+      .profile {
+        margin-bottom: 40px;
       }
 
       .profile img {
-        width: 125px;
-        height: 125px;
+        width: 120px;
+        height: 120px;
       }
 
       .profile h1 {
@@ -126,49 +215,115 @@
       }
 
       .link-card {
-        min-height: 108px;
-        padding: 18px 25px;
+        min-height: 74px;
+        padding: 11px 16px;
+      }
+
+      .icon {
+        width: 48px;
+        height: 48px;
+        margin-right: 15px;
       }
 
       .link-card span {
-        font-size: 16px;
+        font-size: 15px;
       }
 
       footer {
-        margin-top: 120px;
+        margin-top: 85px;
       }
     }
+
   </style>
 </head>
 
 <body>
+
   <main class="container">
 
+    <!-- PROFILE -->
     <section class="profile">
-      <!-- Ganti URL gambar di bawah dengan foto profil kamu -->
-      <img src="profil.jpg">
+
+      <img src="profil.jpg" alt="Foto Profil">
 
       <h1>YahezKieL</h1>
+
       <p>@yahezkiel</p>
+
     </section>
 
+
+    <!-- LINKS -->
     <section class="links">
 
-      <a href="https://www.tiktok.com/@kapassaaaaaaa?_r=1&_t=ZS-99FnJuMomDU" target="_blank">TikTok</a>  
+      <!-- TIKTOK -->
+      <a
+        class="link-card"
+        href="https://www.tiktok.com/@kapassaaaaaaa"
+        target="_blank"
+      >
+
+        <div class="icon tiktok">
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+
+        <span>TikTok</span>
+
+        <div class="arrow">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
       </a>
 
-      <a href="https://instagram.com/" target="_blank">Instagram</a>  
+
+      <!-- INSTAGRAM -->
+      <a
+        class="link-card"
+        href="https://instagram.com/"
+        target="_blank"
+      >
+
+        <div class="icon instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <span>Instagram</span>
+
+        <div class="arrow">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
       </a>
 
-      <a href="https://portal.tmgm-tmc.com/register?node=MzQ3NDA3&language=id" target="_blank">Broker TMGM</a>
+
+      <!-- BROKER -->
+      <a
+        class="link-card"
+        href="https://portal.tmgm-tmc.com/register?node=MzQ3NDA3&language=id"
+        target="_blank"
+      >
+
+        <div class="icon broker">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+
+        <span>Broker TMGM</span>
+
+        <div class="arrow">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
       </a>
 
     </section>
 
+
+    <!-- FOOTER -->
     <footer>
-      YahezKieL
+      Cyaaaaaaa
     </footer>
 
   </main>
+
 </body>
 </html>
